@@ -1,10 +1,12 @@
 import { combineReducers } from 'redux'
 import todos from './todos'
 import visibilityFilter from './visibilityFilter'
+import demoo from './demo'
 
+let x =null
 export default combineReducers({
     todos,
-    visibilityFilter
+    visibilityFilter,
+    demoo,
+    x
 })
-
-console.log("Root Reducer (src/reducers/index.js) đã gọi các reducer (todos.js và visibilityFilter.js)")

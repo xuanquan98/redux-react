@@ -21,6 +21,5 @@ console.log(state)
             return state
     }
 }
-
 export default todos
 
