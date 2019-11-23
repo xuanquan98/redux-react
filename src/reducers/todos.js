@@ -1,7 +1,10 @@
 const todos = (state = [], action) => {
+console.log("action trong reducer todos.js: ")
+console.log(action)
+console.log("state trong reducer todos.js: ")
+console.log(state)
     switch (action.type) {
         case 'ADD_TODO':
-            console.log(state)
             return [
                 ...state,
                 {
@@ -11,7 +14,6 @@ const todos = (state = [], action) => {
                 }
             ]
         case 'TOGGLE_TODO':
-            console.log('this is reducer - Action: TOGGLE_TODO')
             return state.map(todo =>
                 todo.id === action.id ? { ...todo, completed: !todo.completed } : todo
             )

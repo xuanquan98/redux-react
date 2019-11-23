@@ -9,7 +9,6 @@ const AddTodo = ({ dispatch }) => {
         <div>
             <form
                 onSubmit={e => {
-                    console.log("button submit is clicked")
                     e.preventDefault()
                     if (!input.value.trim()) {
                         return
